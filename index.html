@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook Login</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      .rotate {
+        animation: rotateAnimation 10s infinite;
+      }
+
+      @keyframes rotateAnimation {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      .color-transition {
+        animation: colorTransition 10s infinite;
+      }
+
+      @keyframes colorTransition {
+        0% {
+          filter: hue-rotate(0deg);
+        }
+        50% {
+          filter: hue-rotate(120deg);
+        }
+        100% {
+          filter: hue-rotate(240deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="card mt-5">
+            <div class="card-body">
+              <div class="text-center">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/600px-Facebook_Logo_%282019%29.png"
+                  alt="Facebook Logo"
+                  width="150"
+                  height="150"
+                  class="rotate color-transition"
+                />
+              </div>
+              <h4 class="card-title text-center">Log in to Facebook</h4>
+              <form>
+                <div class="form-group">
+                  <label for="email">Email address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Enter your email"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    placeholder="Enter your password"
+                  />
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">
+                  Log In
+                </button>
+              </form>
+              <div class="text-center mt-3">
+                <a href="#">Forgot Password?</a>
+              </div>
+              <hr />
+              <div class="text-center">
+                <p class="mb-0">
+                  Don't have an account? <a href="#">Sign Up</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
